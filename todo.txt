@@ -1,0 +1,67 @@
+[ ] 1. Initial Project Setup
+    [x] Create a new Next.js project with TypeScript.
+    [ ] Set up Git, folder structure, and core dependencies.
+    [ ] Add a basic README.md describing the project.
+    [x] Verify that the project runs correctly in development mode.
+
+[ ] 2. Integrate Clerk Authentication
+    [x ] Install and configure Clerk for authentication.
+    [x] Wrap the app with the ClerkProvider in _app.tsx.
+    [ ] Create sign-up, login, and password reset pages.
+    [ ] Implement a protected dashboard page requiring authentication.
+    [ ] Test sign-up, login, logout, and password reset flows.
+
+[ ] 3. Set Up SQLite Database
+    [ ] Install SQLite (or ORM like Prisma with SQLite).
+    [ ] Define the schema for Users, Blogs, Posts, and Notification Preferences.
+    [ ] Write a migration or initialization script to create tables.
+    [ ] Test database connection with a simple query.
+
+[ ] 4. Implement Blog Management API
+    [ ] Create API routes for blog CRUD operations (POST, GET, PUT, DELETE).
+    [ ] Add input validation and error handling.
+    [ ] Enforce authentication checks for each API route.
+    [ ] Test all API endpoints for correct functionality and HTTP status codes.
+
+[ ] 5. Build Frontend for Blog Management
+    [ ] Create a form to add new blogs.
+    [ ] Develop a dashboard to display a list of followed blogs.
+    [ ] Wire the form to backend API endpoints for adding blogs.
+    [ ] Ensure proper form validation and error messaging.
+    [ ] Verify that the full add, view, update, and delete flow works.
+
+[ ] 6. Implement RSS Feed Polling Service
+    [ ] Create a service to poll RSS feeds for new posts.
+    [ ] Parse RSS feeds and insert new posts into the database.
+    [ ] Flag posts as unread upon insertion.
+    [ ] Wire the service to run on schedule (cron job or serverless function).
+    [ ] Add error handling and logging for failed feed fetches or parsing errors.
+
+[ ] 7. Integrate Push Notifications
+    [ ] Set up the Web Push API for push notifications.
+    [ ] Implement a function to send notifications for new posts.
+    [ ] Register the user's browser for push notifications.
+    [ ] Test notifications on desktop and mobile browsers.
+    [ ] Wire the push notification service to trigger on new post detection.
+
+[ ] 8. Implement Daily Email Notifications
+    [ ] Integrate an email service (SendGrid/Mailgun) into the project.
+    [ ] Write a function to aggregate daily blog posts and format them for email.
+    [ ] Schedule the service function to send daily summary emails.
+    [ ] Implement error handling for failed email sends.
+    [ ] Test the email notifications for correct delivery and formatting.
+
+[ ] 9. Build Dashboard and Profile Pages
+    [ ] Develop a dashboard to display followed blogs and recent posts.
+    [ ] Implement options to mark posts as read/unread.
+    [ ] Add edit and mute notification controls for each blog.
+    [ ] Create a profile page for updating email/password and notification preferences.
+    [ ] Ensure the UI is responsive and mobile-friendly.
+
+[ ] 10. Final Integration, Error Handling, and Testing
+    [ ] Review and integrate all project components.
+    [ ] Implement comprehensive error handling and logging.
+    [ ] Write unit tests for key functionalities (authentication, blog CRUD, notifications).
+    [ ] Write integration and end-to-end tests for user workflows.
+    [ ] Run all tests and resolve any issues.
+    [ ] Prepare the project for deployment on Vercel.
